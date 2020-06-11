@@ -1,22 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://seatrain.github.io</id>
-    <title>海上列车的博客</title>
-    <updated>2020-06-11T05:43:36.990Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://seatrain.github.io"/>
-    <link rel="self" href="https://seatrain.github.io/atom.xml"/>
-    <subtitle>当一切都看起来无济于事的时候,我去看一个石匠敲石头.他一连敲了100次,石头仍然纹丝不动.但他敲第101次的时候,石头裂为两半.可我知道,让石头裂开的不是那最后一击,而是前面的一百次敲击的结果</subtitle>
-    <logo>https://seatrain.github.io/images/avatar.png</logo>
-    <icon>https://seatrain.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, 海上列车的博客</rights>
-    <entry>
-        <title type="html"><![CDATA[线程状态]]></title>
-        <id>https://seatrain.github.io/post/xian-cheng-zhuang-tai/</id>
-        <link href="https://seatrain.github.io/post/xian-cheng-zhuang-tai/">
-        </link>
-        <updated>2020-05-17T02:25:21.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="1-通用线程状态说明">1. 通用线程状态说明</h1>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>线程状态 | 海上列车的博客</title>
+<link rel="shortcut icon" href="https://seatrain.github.io/favicon.ico?v=1591854212775">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://seatrain.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="线程状态 | 海上列车的博客 - Atom Feed" href="https://seatrain.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="1. 通用线程状态说明
+通用的线程生命周期可以用以下的“五态模型”进行描述，这五态分别是：初始状态、可运行状态、运行状态、休眠状态、退出状态。
+
+1. 初始状态： 指的是在编程语言层面，该线程已被创建，而在操作系统层面，真正的线程还未被创建..." />
+    <meta name="keywords" content="Java多线程" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://seatrain.github.io">
+  <img class="avatar" src="https://seatrain.github.io/images/avatar.png?v=1591854212775" alt="">
+  </a>
+  <h1 class="site-title">
+    海上列车的博客
+  </h1>
+  <p class="site-description">
+    当一切都看起来无济于事的时候,我去看一个石匠敲石头.他一连敲了100次,石头仍然纹丝不动.但他敲第101次的时候,石头裂为两半.可我知道,让石头裂开的不是那最后一击,而是前面的一百次敲击的结果
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              线程状态
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-05-17
+              </span>
+              <span>
+                9 min read
+              </span>
+              
+                <a href="https://seatrain.github.io/tag/RXJGZ6cen/" class="post-tag">
+                  # Java多线程
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <h1 id="1-通用线程状态说明">1. 通用线程状态说明</h1>
 <p>通用的线程生命周期可以用以下的“五态模型”进行描述，这五态分别是：初始状态、可运行状态、运行状态、休眠状态、退出状态。<br>
 <img src="https://seatrain.github.io/post-images/1591843069931.png" alt="通用线程状态转换说明" loading="lazy"><br>
 1. <strong>初始状态：</strong> 指的是在编程语言层面，该线程已被创建，而在操作系统层面，真正的线程还未被创建，还不被允许分配CPU执行；<br>
@@ -256,75 +335,96 @@ thread sleep end!
 I am interrupted!
 after interrupted, thread state is : RUNNABLE
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[进程和线程的简介]]></title>
-        <id>https://seatrain.github.io/post/jin-cheng-he-xian-cheng-de-jian-jie/</id>
-        <link href="https://seatrain.github.io/post/jin-cheng-he-xian-cheng-de-jian-jie/">
-        </link>
-        <updated>2020-05-07T02:35:36.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="1-进程产生的背景">1. 进程产生的背景</h1>
-<h2 id="11-单道处理效率低下">1.1 单道处理效率低下</h2>
-<p>在单道处理系统下，CPU和IO设备的运行都是串行的，即在程序进行输入输出时，CPU只能等待。CPU只能轮询地询问IO操作是否完成，因而不能执行别的程序。由于IO设备的运行速度相对于CPU来说实在太慢，这种高速设备等待低速设备的状况效率较低。</p>
-<h2 id="12-改进策略-多道编程">1.2 改进策略-多道编程</h2>
-<p>人们希望将<strong>CPU运行和IO设备的运行重叠</strong>起来而改善整个系统的效率，基于此想法，人们想同时将多个程序加载到计算机中并发执行。这些同时存在于计算机内存中的程序称为进程，进程让每个用户都感觉自己独占CPU，因此进程就是为了实现多道编程提出的概念。</p>
-<h2 id="13-多道编程的好处">1.3 多道编程的好处</h2>
-<h3 id="131-提高cpu利用率">1.3.1 提高CPU利用率</h3>
-<p>进程的出现是为了支持多道编程，进行多道编程的目的则是为了提高计算机CPU的利用率。随着进程的增加。CPU利用率的提升逐步增加，但是提升的幅度逐步减小，直到某个临界点为止。之后CPU利用率的提升空间很小，但是进程切换带来的开销变得非常明显。以下是多道编程进程数和CPU利用率的关系图：<br>
-<img src="https://seatrain.github.io/post-images/1591671660396.PNG" alt="" loading="lazy"></p>
-<h3 id="132-改善响应时间-提升用户体验">1.3.2 改善响应时间-提升用户体验</h3>
-<p>多道编程的第二个好处是改善系统的响应时间，即<strong>用户等待时间</strong>。<br>
-在原先单道编程的情况下，只能串行执行任务，多个任务总执行时间=各个任务执行时间之和。<br>
-但是在多道编程的情况下，可同时运行多个任务并行执行，在任务执行到IO部分即可切换到其它任务来使用CPU，多个任务的总执行时间&lt;各个任务执行时间之和。</p>
-<h1 id="2-进程相关的观念">2. 进程相关的观念</h1>
-<h2 id="21-进程-逻辑并发">2.1 进程-逻辑并发</h2>
-<p>进程：进展中的程序，程序在被加载到内存之后就变为进程，即进程=程序+执行。以下为不同视角下的进程模型。在单核CPU中，任意时刻执行的进程实际上只有一个，因此，进程实际上是逻辑并发。<br>
-<img src="https://seatrain.github.io/post-images/1591673286650.png" alt="" loading="lazy"></p>
-<h2 id="22-进程的位置">2.2 进程的位置</h2>
-<p>进程最少必须包括一个或一组的程序，与这些程序相关的是局部变量、全局变量和已经定义常量的数据单元。因此，一个程序必须至少包含足够的内存空间，以保存该进程的程序和数据。此外程序的执行通常涉及用于跟踪过程调用和过程传递参数的栈。最后，每个进程关联的还有操作系统用于控制进程的进程控制块（PCB）。<strong>程序、数据和栈属性的集合称为进程映像</strong>。<br>
-进程映像的位置依赖于使用的内存管理方案，现代操作系统多采用段页式划分的方式。为执行该程序，整个进程映像必需载入内存或至少载入虚拟内存之中。因此操作系统维护的进程表必需表明每个进程映像中每页的位置。</p>
-<h2 id="23-进程的属性">2.3 进程的属性</h2>
-<ol>
-<li><strong>进程标识信息：</strong> 每个进程分配了唯一的数字标识符（Process Indentification，进程标识符PID），其可以简单的表示为主进程表的一个索引,使得操作系统可以根据进程标识符定位相应的表；</li>
-<li><strong>处理器状态信息：</strong> 包括处理器寄存器，当一个进程正在运行时，其信息保存在寄存器中，当进程被中断时，所有的寄存器信息被保存起来，便于进程切换之后的恢复；</li>
-<li><strong>进程控制信息：</strong> 这是操作系统控制和协调进程各种活动所需要的额外信息；</li>
-</ol>
-<h2 id="24-进程的产生和消亡">2.4 进程的产生和消亡</h2>
-<ol>
-<li>进程的产生：
-<ol>
-<li>系统初始化时，产生服务进程，使得新的进程和用户程序的执行成为可能；</li>
-<li>系统初始化后，用户双击可执行文件或者启动程序，系统为其创建进程；</li>
-<li>用户可以在程序里面调用fork产生新的进程；</li>
-</ol>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li><a href="#1-%E9%80%9A%E7%94%A8%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81%E8%AF%B4%E6%98%8E">1. 通用线程状态说明</a></li>
+<li><a href="#2-java%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81%E8%AF%B4%E6%98%8E">2. Java线程状态说明</a>
+<ul>
+<li><a href="#21-runnable-%E4%B8%8E-blocked%E7%9A%84%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2">2.1 Runnable 与 Blocked的状态转换</a></li>
+<li><a href="#22-runnable-%E4%B8%8E-waiting-%E7%9A%84%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2">2.2 	RUNNABLE 与 WAITING 的状态转换</a>
+<ul>
+<li><a href="#221-%E8%8E%B7%E5%BE%97synchronized%E9%9A%90%E5%BC%8F%E9%94%81%E7%9A%84%E7%BA%BF%E7%A8%8B%E8%B0%83%E7%94%A8%E6%97%A0%E5%8F%82%E6%95%B0%E7%9A%84objectwait%E6%96%B9%E6%B3%95">2.2.1 获得Synchronized隐式锁的线程，调用无参数的Object.wait方法</a></li>
+<li><a href="#222-%E8%B0%83%E7%94%A8%E6%97%A0%E5%8F%82%E6%95%B0%E7%9A%84threadjoin%E6%96%B9%E6%B3%95">2.2.2 调用无参数的Thread.join方法</a></li>
+<li><a href="#223-%E8%B0%83%E7%94%A8locksupportpark%E6%96%B9%E6%B3%95">2.2.3 调用LockSupport.park方法</a></li>
+</ul>
 </li>
-<li>进程的消亡：
-<ol>
-<li>寿终：进程完成运行而退出；</li>
-<li>自杀：进程因错误而自行退出；</li>
-<li>他杀：进程被其它进程所终止；</li>
-</ol>
+<li><a href="#23-runnable-%E4%B8%8E-timed_waiting%E7%9A%84%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2">2.3 	RUNNABLE 与 TIMED_WAITING的状态转换</a></li>
+<li><a href="#24-new-%E5%88%B0-runnable-%E7%8A%B6%E6%80%81">2.4 NEW 到 RUNNABLE 状态</a></li>
+<li><a href="#25-runnable-%E5%88%B0-terminated-%E7%8A%B6%E6%80%81">2.5  RUNNABLE 到 TERMINATED 状态</a></li>
+<li><a href="#26-%E7%BA%BF%E7%A8%8B%E4%B8%AD%E6%96%AD">2.6 线程中断</a></li>
+</ul>
 </li>
-</ol>
-<h2 id="25-进程的状态">2.5 进程的状态</h2>
-<p>进程有就绪态、阻塞态和执行态三种状态，以下是三种状态的切换情况：<br>
-<img src="https://seatrain.github.io/post-images/1591677020702.png" alt="" loading="lazy"></p>
-<h1 id="3-线程的提出">3. 线程的提出</h1>
-<p>虽然进程的出现使得CPU的使用效率得到提升，但是随着时间的推移。人们并不满足一个进程在一段时间只做一件事情。因为一个进程如果有多个子任务，只能逐个执行，很影响效率。<br>
-因此就提出了线程的概念，让一个线程执行一个子任务，使得一个进程中包含多个线程，每个线程负责一个单独的子任务。<strong>进程让操作系统的并发性成为了可能，而线程让进程的内部并发成为了可能。</strong></p>
-<h1 id="4-进程和线程的区别">4. 进程和线程的区别</h1>
-<p>进程是一个独立的运行环境，而线程是进程中执行的一个任务，两个本质区别是是否<strong>单独占有内存空间地址和其它系统资源（比如IO）</strong>。</p>
-<ol>
-<li><strong>内存隔离：</strong> 进程单独占有一定的内存地址空间，因此进程间存在内存隔离，数据分开，数据共享复杂但是同步简单，各个进程之间不相互干扰。但是线程共享进程的内存地址空间和资源，数据共享简单，但是同步复杂;</li>
-<li><strong>稳定性：</strong> 进程单独占有一定的内存地址空间，一个进程出现问题不会影响到其它进程，不影响主程序的稳定性，可靠性高。但是单个线程的崩溃会影响到整个程序的稳定性，可靠性较低；</li>
-<li><strong>创建和销毁的成本不同：</strong> 进程单独占有一定的内存地址空间，因此进程的创建和销毁不仅需要保存寄存器和栈信息，还需要资源的分配回收以及页调度、开销较大。线程只需要保存寄存器和栈信息，开销较小；</li>
-</ol>
-<p>进程是操作系统进行资源分配的基本单位，而线程是操作系统进行调度的基本单位。</p>
-<h1 id="5-上下文切换">5. 上下文切换</h1>
-<p><strong>上下文指的时某一时间点CPU寄存器和程序计数器的内容</strong>。<br>
-CPU通过为每个线程分配CPU时间片来实现多线程机制。CPU通过时间片分配算法实现循环执行任务，当前任务执行完一个时间片之后会切换到下一个时间片。因此上下文的切换指的就是CPU在进行任务切换时，保存当前任务线程的上下文，然后将上下文切换成下一个任务线程的上下文。</p>
-<p>因此上下文切换作为计算密集型，意味着会消耗大量的CPU时间，因此线程也不是越多越好。</p>
-]]></content>
-    </entry>
-</feed>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://seatrain.github.io/post/jin-cheng-he-xian-cheng-de-jian-jie/">
+              <h3 class="post-title">
+                进程和线程的简介
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank"> 海上列车 </a>
+  <a class="rss" href="https://seatrain.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
